@@ -15,15 +15,13 @@ public class StringChallengeMain {
             int result = StringChallenge(Integer.parseInt(line.substring(i, i + 2)));
             switch (result) {
                 case (1):
-                    newLine.append("*").append(line.charAt(i + 1));
+                    newLine.append("*");
                     break;
                 case (2):
-                    newLine.append("-").append(line.charAt(i + 1));
-                    break;
-                case (0):
-                    newLine.append(line.charAt(i + 1));
+                    newLine.append("-");
                     break;
             }
+            newLine.append(line.charAt(i + 1));
         }
         return newLine.toString();
     }

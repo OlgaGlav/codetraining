@@ -19,4 +19,11 @@ class StringChallengeMainHelloWorldTest {
         String excpect = "I Ran There";
         assertEquals(excpect, StringChallengeMainHelloWorld.stringChallengee(line));
     }
+
+    @Test
+    void stringChallengeeOneLetter() {
+        String line = "u y";
+        String excpect = "U Y";
+        assertEquals(excpect, StringChallengeMainHelloWorld.stringChallengee(line));
+    }
 }

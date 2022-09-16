@@ -12,9 +12,8 @@ public class StringChallengeMainHelloWorld {
     public static String stringChallengee(String str) {
         String[] arr = str.split(" ");
         StringBuilder result = new StringBuilder();
-        for (int i = 0; i < arr.length; i++) {
-            arr[i] = arr[i].substring(0, 1).toUpperCase() + arr[i].substring(1);
-            result.append(arr[i]).append(" ");
+        for (String s : arr) {
+            result.append(s.substring(0, 1).toUpperCase()).append(s.substring(1)).append(" ");
         }
         return result.toString().trim();
     }
